@@ -54,7 +54,7 @@ var pd = {
                 ". Would you like to open the changelog in a new tab?"
             )
           ) {
-            $.ajax({ url: "/r/PowerDeleteSuite/new.json" }).then(
+            $.ajax({ url: "https://raw.githubusercontent.com/Kupie/PowerDeleteSuite/master/css.json" }).then(
               function (data) {
                 window.open(
                   "https://reddit.com" + data.data.children[0].data.permalink
